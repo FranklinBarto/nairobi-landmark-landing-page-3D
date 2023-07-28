@@ -21,15 +21,6 @@ export default function Scene({ setBg }) {
   const [down, setDown] = useState(false)
   const [hovered, setHovered] = useState(false)
 
-  // Change cursor on hovered state
-  useEffect(() => {
-    document.body.style.cursor = hovered
-      ? 'none'
-      : `url('data:image/svg+xml;base64,${btoa(
-          '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="10" fill="#52C9ED"/></svg>'
-        )}'), auto`
-  }, [hovered])
-
   // Make the mesh float and follow the mouse
   // This is frame-based animation, useFrame subscribes the component to the render-loop
   useFrame((state) => {
