@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Frankothe196/nairobi-landmark-landing-page-3D/static/css/main.96f2b689.css",
-    "main.js": "/Frankothe196/nairobi-landmark-landing-page-3D/static/js/main.5976d125.js",
-    "static/js/787.03da67e8.chunk.js": "/Frankothe196/nairobi-landmark-landing-page-3D/static/js/787.03da67e8.chunk.js",
-    "static/media/kicc.glb": "/Frankothe196/nairobi-landmark-landing-page-3D/static/media/kicc.af61a5875c853d1413af.glb",
-    "index.html": "/Frankothe196/nairobi-landmark-landing-page-3D/index.html",
-    "main.96f2b689.css.map": "/Frankothe196/nairobi-landmark-landing-page-3D/static/css/main.96f2b689.css.map",
-    "main.5976d125.js.map": "/Frankothe196/nairobi-landmark-landing-page-3D/static/js/main.5976d125.js.map",
-    "787.03da67e8.chunk.js.map": "/Frankothe196/nairobi-landmark-landing-page-3D/static/js/787.03da67e8.chunk.js.map"
+    "main.css": "/nairobi-landmark-landing-page-3D/static/css/main.96f2b689.css",
+    "main.js": "/nairobi-landmark-landing-page-3D/static/js/main.0b377b7f.js",
+    "static/js/787.03da67e8.chunk.js": "/nairobi-landmark-landing-page-3D/static/js/787.03da67e8.chunk.js",
+    "static/media/kicc.glb": "/nairobi-landmark-landing-page-3D/static/media/kicc.af61a5875c853d1413af.glb",
+    "index.html": "/nairobi-landmark-landing-page-3D/index.html",
+    "main.96f2b689.css.map": "/nairobi-landmark-landing-page-3D/static/css/main.96f2b689.css.map",
+    "main.0b377b7f.js.map": "/nairobi-landmark-landing-page-3D/static/js/main.0b377b7f.js.map",
+    "787.03da67e8.chunk.js.map": "/nairobi-landmark-landing-page-3D/static/js/787.03da67e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96f2b689.css",
-    "static/js/main.5976d125.js"
+    "static/js/main.0b377b7f.js"
   ]
 }
