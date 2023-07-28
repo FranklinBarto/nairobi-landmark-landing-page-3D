@@ -26,7 +26,7 @@ export default function Scene({ setBg }) {
     document.body.style.cursor = hovered
       ? 'none'
       : `url('data:image/svg+xml;base64,${btoa(
-          '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="10" fill="#E8B059"/></svg>'
+          '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="10" fill="#52C9ED"/></svg>'
         )}'), auto`
   }, [hovered])
 
@@ -54,7 +54,7 @@ export default function Scene({ setBg }) {
       coat: mode && !hovered ? 0.04 : 1,
       ambient: mode && !hovered ? 1.5 : 0.5,
       env: mode && !hovered ? 0.4 : 1,
-      color: hovered ? '#E8B059' : mode ? '#202020' : 'white',
+      color: hovered ? '#1496bd' : mode ? '#202020' : 'white',
       config: (n) => n === 'wobble' && hovered && { mass: 2, tension: 1000, friction: 10 }
     },
     [mode, hovered, down]
@@ -62,17 +62,15 @@ export default function Scene({ setBg }) {
 
   return (
     <>
-      {/* <PerspectiveCamera makeDefault position={[0, 0, 4]} fov={75}>
-      </PerspectiveCamera> */}
       <PresentationControls
         global
         zoom={0.8}
-        rotation={[0, -Math.PI / 1.5, 0]}
+        rotation={[0, -Math.PI / 1.6, 0]}
         polar={[0, Math.PI / 4]}
         azimuth={[-Math.PI / 4, Math.PI / 4]}>
           
         <a.ambientLight intensity={ambient} />
-        <a.pointLight ref={light} position-z={-15} intensity={env} color="#F8C069" />
+        <a.pointLight ref={light} position-z={-15} intensity={env} color="#84c3d6" />
 
         <Suspense fallback={null}>
           <a.mesh

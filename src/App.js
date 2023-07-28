@@ -12,11 +12,23 @@ function App() {
  
   return (
     <a.main style={{ background }}>
-      <Canvas className="canvas" dpr={[1, 2]}>
-        <Scene setBg={set} />
-        {/* <OrbitControls enablePan={false} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} /> */}
-      </Canvas>
-      <Overlay fill={fill} />
+      <section className='heroSection'>
+        <Overlay fill={fill} />
+        <Canvas className='canvas' dpr={[1, 2]}>
+          <Scene setBg={set} />
+        </Canvas>
+      </section>
+      <section className='Content'>
+        <a.h2 style={{color:fill}}>weekly Feature</a.h2>
+        <a.h3 style={{color:fill}}>Diving in Nairobi City</a.h3>
+        <div className='details'>
+          <span>sub-heading</span>
+          <span>Brief Text</span>
+          <p>As a valued member of our community, you'll receive exciting updates, special offers, and early insights into the landmark's creation.</p>
+          <button>Call To Action</button>
+          <img alt='ocean' src="https://images.unsplash.com/photo-1682687981603-ae874bf432f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"/>
+        </div>
+      </section>
     </a.main>
   )
 }
