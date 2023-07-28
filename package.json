@@ -1,7 +1,7 @@
 {
   "name": "kicc",
   "version": "0.1.0",
-  "homepage": "https://github.com/Frankothe196/nairobi-landmark-landing-page-3D.git",
+  "homepage": "https://github.com/Frankothe196/nairobi-landmark-landing-page-3D",
   "private": true,
   "dependencies": {
     "@react-spring/core": "^9.7.2",
