@@ -51,6 +51,11 @@ export default function Scene({ setBg }) {
     [mode, hovered, down]
   )
 
+  // Lets make the cursor large on hover
+  // useEffect(()=>{
+  //   if(hovered)
+  // },[hovered])
+
   return (
     <>
       <PresentationControls

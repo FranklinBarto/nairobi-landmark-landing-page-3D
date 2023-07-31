@@ -1,10 +1,18 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Helvetica;
+}
+
+canvas,body{
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Ccircle cx='15' cy='15' r='15' fill='%232A6577'/%3E%3C/svg%3E"), auto;
+}
+
+button{
+  cursor: pointer;
 }
 
 main {
@@ -17,12 +25,7 @@ main {
   flex-direction: column;
 }
 
-body {
-  cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iI0U4QjA1OSIvPjwvc3ZnPg=='),
-    auto;
-}
-
-.heroSection{
+.heroSection {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -37,94 +40,123 @@ body {
   z-index: 0;
 }
 
-.Content{
+.Content {
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 100px;
+  padding: 10%;
   padding-bottom: 200px;
 }
 
-.Content h2{
+.Content::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 80%;
+  background: center
+    url("https://www.pngkit.com/png/full/839-8391998_line-vector-png-vector-wavy-lines.png");
+  background-size: auto 140%;
+  z-index: 0;
+}
+
+.Content h2 {
   font-size: 2rem;
   margin-left: 20px;
 }
 
-.Content h3{
-  font-size: 4rem;
+.Content h3 {
+  font-size: 4em;
 }
 
-.Content p{
+.Content p {
   font-size: 1.5rem;
 }
 
-.Content .details{
+.Content .details {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 65vw;
-  height: 50vh;
-  background-color: #52C9ED;
+  min-height: 50vh;
+  background-color: #52c9ed;
   z-index: 0;
   padding: 32px;
   margin: 20px auto;
 }
 
-.Content .details span:nth-of-type(1){
+.Content .details span:nth-of-type(1) {
   font-size: normal;
   margin: 8px;
   color: aliceblue;
 }
 
-.Content .details span:nth-of-type(2){
-  font-size: x-large;  
+.Content .details span:nth-of-type(2) {
+  font-size: x-large;
+  max-width: 50%;
   color: aliceblue;
   margin-bottom: 12px;
 }
 
-.Content .details p{
+.Content .details p {
   font-size: 1.2rem;
-  width: 40%;
+  max-width: 40%;
   color: aliceblue;
 }
 
-.Content .details button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: max-content;
-    white-space: nowrap;
-    border-radius: 8px;
-    border: none;
-    background: aliceblue;
-    color: #176279;
-    padding: 8px;
-    margin: 12px;
-    font-size: large;
-    pointer-events: all;
+.Content .details button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  white-space: nowrap;
+  border-radius: 8px;
+  border: none;
+  background: aliceblue;
+  color: #176279;
+  padding: 8px;
+  margin: 12px;
+  font-size: large;
+  pointer-events: all;
 }
 
-.Content .details img{
+.Content .details img {
   position: absolute;
-  right: -10px;
+  right: -20%;
   top: 50%;
   transform: translateY(-50%);
-  height: 170%;
-  width: auto;
+  height: auto;
+  width: 30vw;
 }
 
-@media only screen and (max-aspect-ratio: 8/7) {
-  main {
-    flex-direction: column;
+@media screen and (max-width: 1200px) {
+  .Content h2 {
+    font-size: 1.5em;
+    margin-left: 20px;
   }
-  .canvas {
-    order: 1;
+
+  .Content h3 {
+    font-size: 3em;
   }
-  svg {
-    order: 2;
-    width: 100%;
-    max-width: 100%;
-    height: 60vh;
+}
+
+@media screen and (max-width: 600px) {
+  .Content .details {
+    width: 85vw;
+    min-height: 50vh;
+  }
+
+  .Content .details p { 
+    font-size: 1.2rem;
+    max-width: 60%;
+    color: aliceblue;
+  }
+
+  .Content .details img {
+    position: absolute;
+    right: -5%;
+    width: 40vw;
   }
 }
