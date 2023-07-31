@@ -51,11 +51,6 @@ export default function Scene({ setBg }) {
     [mode, hovered, down]
   )
 
-  // Lets make the cursor large on hover
-  // useEffect(()=>{
-  //   if(hovered)
-  // },[hovered])
-
   return (
     <>
       <PresentationControls
@@ -82,7 +77,7 @@ export default function Scene({ setBg }) {
               setMode(!mode)
               setBg({ background: !mode ? '#202020' : '#f0f0f0', fill: !mode ? '#f0f0f0' : '#202020' })
             }}>
-            <a.meshStandardMaterial color={color} envMapIntensity={0} clearcoat={coat} clearcoatRoughness={0} metalness={0.1} />
+            <a.meshStandardMaterial color={color} envMapIntensity={1} clearcoat={coat} clearcoatRoughness={0} metalness={0.1} />
           </a.mesh>
           <Environment preset="warehouse" />
           <ContactShadows
