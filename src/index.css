@@ -23,6 +23,7 @@ main {
   background: none;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .heroSection {
@@ -44,18 +45,17 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   padding: 10%;
-  padding-bottom: 200px;
 }
 
 .Content::before {
   position: absolute;
   content: "";
-  bottom: 0;
+  top: 10%;
   left: 0;
   width: 100vw;
-  height: 80%;
+  height: 100%;
   background: center
     url("https://www.pngkit.com/png/full/839-8391998_line-vector-png-vector-wavy-lines.png");
   background-size: auto 140%;
