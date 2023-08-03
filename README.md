@@ -1,8 +1,8 @@
 # Nairobi City Landing Page React Template
-With an interesting light and dark mode toggle
+Click on the 3d object to toggle light and dark mode.
 
-I have a number of blender I just so happened to recreated KICC, a famous landmark here in Nairobi.
-Might as well share it.
+I have a number of blender I just so happened to have recreated KICC recently, a famous landmark here in Nairobi.
+I decided I might as well share it on here
 
 <img
   src="app-screenshot.png"
